@@ -1,9 +1,10 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../Assets/image.png";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
+import Lottie from "lottie-react";
+import animationData from "../../Assets/rocket.json";
 
 function Home() {
   return (
@@ -17,22 +18,20 @@ function Home() {
                 Hi There!{" "}
               </h1>
 
-              <h1 className="heading-name">
-                I'M
-                <strong className="main-name"> GEETESH KANKONKAR</strong>
-              </h1>
+              <h2 className="heading-name">
+                I'M <strong className="main-name">GEETESH KANKONKAR</strong>
+              </h2>
 
               <div style={{ padding: 50, textAlign: "left" }}>
                 <Type />
               </div>
             </Col>
 
-            <Col md={5} style={{ paddingBottom: 20 }}>
-              <img
-                src={homeLogo}
-                alt="home pic"
-                className="img-fluid"
-                style={{ maxHeight: "450px" }}
+            <Col md={5} style={{ paddingBottom: 10 }}>
+              <Lottie
+                animationData={animationData}
+                loop
+                style={{ height: "100%", maxHeight: "450px" }}
               />
             </Col>
           </Row>
