@@ -2,9 +2,9 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import blog from "../../Assets/Projects/Blog.png";
+import datapipeline from "../../Assets/Projects/DataPipeline.png";
+import trendrrr from "../../Assets/Projects/Trendrrr.png";
 
 function Projects() {
   return (
@@ -20,7 +20,7 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={trendrrr}
               isBlog={false}
               title="Trendrrr"
               description="Developed a full-stack app to analyze and predict social media trends using machine learning. Built a FastAPI backend to serve ML models and a Streamlit frontend for real-time interaction. Used DistilBERT for sentiment analysis and trained trend prediction models (Random Forest, SVM, XGBoost) on tweet metadata. Integrated NLP and classification pipelines to detect trending topics, sentiment polarity, and forecast trend longevity."
@@ -31,7 +31,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={datapipeline}
               isBlog={false}
               title="Data-Engineering-Pipeline"
               description="The project uses Azure services for efficient data processing. Azure Data Factory extracts data from an HTTPS source into Data Lake Gen2. Databricks cleans and transforms it using PySpark/SQL, storing it in Delta Lake or Parquet. Transformed data is queried via Synapse Analytics and visualized in Power BI."
@@ -41,7 +41,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={blog}
               isBlog={false}
               title="IPL-Data-Analysis"
               description="The Data_analysis_IPL project explores IPL match data using Python. It analyzes team and player performances, toss impacts, and match outcomes using pandas and visualization libraries. Insights are presented through graphs, highlighting trends across seasons. It’s ideal for cricket fans and data enthusiasts interested in sports analytics."
