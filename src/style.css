@@ -260,7 +260,7 @@ button:focus {
 }
 
 .home-header {
-  padding-top: 80px !important;
+  padding-top: 30px !important;
 }
 
 .home-section {
@@ -273,8 +273,6 @@ button:focus {
   background-attachment: fixed; /* Optional: Makes it look immersive */
   height: 100vh;
   width: 100vw;
-  padding-top: 30px !important;
-  padding-bottom: 30px !important;
 }
 
 .home-content {
