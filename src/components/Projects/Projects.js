@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import blog from "../../Assets/Projects/Blog.png";
+import dataAnalytics from "../../Assets/Projects/DataAnalytics.png";
 import datapipeline from "../../Assets/Projects/DataPipeline.png";
 import trendrrr from "../../Assets/Projects/Trendrrr.png";
 
@@ -41,7 +41,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={blog}
+              imgPath={dataAnalytics}
               isBlog={false}
               title="IPL-Data-Analysis"
               description="The Data_analysis_IPL project explores IPL match data using Python. It analyzes team and player performances, toss impacts, and match outcomes using pandas and visualization libraries. Insights are presented through graphs, highlighting trends across seasons. It’s ideal for cricket fans and data enthusiasts interested in sports analytics."
