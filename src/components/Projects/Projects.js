@@ -12,13 +12,14 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          My Recent <strong className="purple">Works</strong>
         </h1>
-        <p style={{ color: "white" }}>
+        <p style={{ color: "white", marginBottom: "40px" }}>
           Here are a few projects I've worked on recently.
         </p>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
+
+        <Row className="g-4" style={{ justifyContent: "center" }}>
+          <Col md={6} lg={4} className="project-card">
             <ProjectCard
               imgPath={trendrrr}
               isBlog={false}
@@ -29,59 +30,25 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col md={6} lg={4} className="project-card">
             <ProjectCard
               imgPath={datapipeline}
               isBlog={false}
               title="Data-Engineering-Pipeline"
-              description="The project uses Azure services for efficient data processing. Azure Data Factory extracts data from an HTTPS source into Data Lake Gen2. Databricks cleans and transforms it using PySpark/SQL, storing it in Delta Lake or Parquet. Transformed data is queried via Synapse Analytics and visualized in Power BI."
+              description="This project uses Azure services for efficient data processing. Azure Data Factory extracts data into Data Lake Gen2. Databricks cleans and transforms it using PySpark/SQL. Transformed data is stored in Delta Lake or Parquet, queried with Synapse Analytics and visualized in Power BI."
               ghLink="https://github.com/geetesh012/Data_engineering_project"
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col md={6} lg={4} className="project-card">
             <ProjectCard
               imgPath={dataAnalytics}
               isBlog={false}
-              title="IPL-Data-Analysis"
-              description="The Data_analysis_IPL project explores IPL match data using Python. It analyzes team and player performances, toss impacts, and match outcomes using pandas and visualization libraries. Insights are presented through graphs, highlighting trends across seasons. It’s ideal for cricket fans and data enthusiasts interested in sports analytics."
-              ghLink="https://github.com/geetesh012/Data_analysis_IPL"           
+              title="IPL Data Analysis"
+              description="This project explores IPL match data using Python. It analyzes team and player performances, toss impacts, and match outcomes using pandas and data visualizations. Highlights trends across seasons, ideal for cricket fans and data enthusiasts."
+              ghLink="https://github.com/geetesh012/Data_analysis_IPL"
             />
           </Col>
-
-          {/* <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={leaf}
-              isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink=""
-              demoLink=""
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink=""
-              // demoLink="" 
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink=""
-              // demoLink=""       
-            />
-          </Col> */}
         </Row>
       </Container>
     </Container>

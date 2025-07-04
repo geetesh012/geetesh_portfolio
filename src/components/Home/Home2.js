@@ -13,67 +13,67 @@ function Home2() {
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
-        <Row>
+        <Row className="align-items-center">
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              Turning ideas into interactive experiences—one line of code at a
-              time.
+              Turning ideas into interactive experiences—one line of code at a time.
               <br />
-              <br />A frontend developer with a passion for clean design and
-              seamless user interaction. Skilled in
+              <br />
+              A frontend developer passionate about clean design and seamless interaction. I specialize in
               <i>
-                <b className="purple"> React and Next.js </b>
+                <b className="purple"> React and Next.js</b>
               </i>
-              <br />
-              <br />
-              with a strong eye for
+              , with a strong focus on
               <i>
-                <b className="purple"> UI/UX design </b> and detail.
+                <b className="purple"> UI/UX design</b>
               </i>
+              .
               <br />
               <br />
-              Focused on building clean, efficient, and engaging interfaces that
-              bridge design and functionality seamlessly
+              My goal is to build clean, efficient, and engaging interfaces that blend design and functionality seamlessly.
               <br />
-              <br /> I enjoy turning ideas into interactive, pixel-perfect
-              products that users love to explore.
+              <br />
+              I enjoy transforming ideas into pixel-perfect, interactive products that users love to explore.
             </p>
           </Col>
-          <Col md={4} className="myAvtar">
+
+          <Col md={4} className="myAvtar d-flex justify-content-center">
             <Tilt>
               <img
                 src={myImg}
                 className="img-fluid"
                 alt="profileP"
                 style={{
-                  maxWidth: "300px",
+                  maxWidth: "280px",
                   width: "100%",
                   height: "auto",
                   borderRadius: "50%",
                   objectFit: "cover",
+                  boxShadow: "0 4px 20px rgba(0, 0, 0, 0.3)"
                 }}
               />
             </Tilt>
           </Col>
         </Row>
+
         <Row>
-          <Col md={12} className="home-about-social">
+          <Col md={12} className="home-about-social text-center mt-5">
             <h1>FIND ME ON</h1>
             <p>
-              Feel free to <span className="purple">connect </span>with me
+              Feel free to <span className="purple">connect</span> with me
             </p>
-            <ul className="home-about-social-links">
+            <ul className="home-about-social-links d-flex justify-content-center gap-4 flex-wrap">
               <li className="social-icons">
                 <a
                   href="https://github.com/geetesh012"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
-                  <AiFillGithub />
+                  <AiFillGithub size={30} />
                 </a>
               </li>
               <li className="social-icons">
@@ -81,9 +81,9 @@ function Home2() {
                   href="https://x.com/Geetesh_12_"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
-                  <AiOutlineTwitter />
+                  <AiOutlineTwitter size={30} />
                 </a>
               </li>
               <li className="social-icons">
@@ -91,9 +91,9 @@ function Home2() {
                   href="https://www.linkedin.com/in/geetesh-kankonkar-1365b11a3/"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
-                  <FaLinkedinIn />
+                  <FaLinkedinIn size={30} />
                 </a>
               </li>
               <li className="social-icons">
@@ -103,7 +103,7 @@ function Home2() {
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
                 >
-                  <AiFillInstagram />
+                  <AiFillInstagram size={30} />
                 </a>
               </li>
             </ul>
@@ -113,4 +113,5 @@ function Home2() {
     </Container>
   );
 }
+
 export default Home2;

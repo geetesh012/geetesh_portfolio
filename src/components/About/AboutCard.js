@@ -8,31 +8,33 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Geetesh Kankonkar </span>
-            from <span className="purple"> Goa, India.</span>
-            <br />  
+            Hi Everyone, I am{" "}
+            <span className="purple">Geetesh Kankonkar</span> from{" "}
+            <span className="purple">Goa, India</span>.
+            <br />
+            <br />
             I am currently employed as a software developer at ...
             <br />
-            I have completed Bachelor of Engineering (BE) in Information Technology at GEC
-            Goa.
+            I have completed Bachelor of Engineering (BE) in Information Technology at GEC Goa.
             <br />
             <br />
-            Apart from coding, some other activities that I love to do!
+            Apart from coding, some other activities that I love to do:
           </p>
-          
-<ul>
-  <li className="about-activity">
-    <FaLongArrowAltRight className="arrow-icon" /> Playing Games
-  </li>
-  <li className="about-activity">
-    <FaLongArrowAltRight className="arrow-icon" /> Sports Analysis
-  </li>
-  <li className="about-activity">
-    <FaLongArrowAltRight className="arrow-icon" /> Travelling
-  </li>
-</ul>
-          <p style={{ color: "rgb(45, 129, 255)" }}>
-            "BE YOURSELF!"{" "}
+
+          <ul className="about-activity-list">
+            <li className="about-activity">
+              <FaLongArrowAltRight className="arrow-icon" /> Playing Games
+            </li>
+            <li className="about-activity">
+              <FaLongArrowAltRight className="arrow-icon" /> Sports Analysis
+            </li>
+            <li className="about-activity">
+              <FaLongArrowAltRight className="arrow-icon" /> Travelling
+            </li>
+          </ul>
+
+          <p className="quote" style={{ color: "rgb(45, 129, 255)", marginTop: "20px" }}>
+            "BE YOURSELF!"
           </p>
           <footer className="blockquote-footer">Geetesh</footer>
         </blockquote>

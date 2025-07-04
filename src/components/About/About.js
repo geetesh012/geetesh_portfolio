@@ -5,7 +5,7 @@ import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import Toolstack from "./Toolstack";
 import Lottie from "lottie-react";
-import animationData from "../../Assets/about-me.json"; // same animation used in Home.js
+import animationData from "../../Assets/about-me.json";
 
 function About() {
   return (
@@ -13,37 +13,24 @@ function About() {
       <Particle />
       <Container>
         {/* ROW: Heading + About Card + Animation */}
-        <Row style={{ justifyContent: "center", padding: "10px" }}>
+        <Row
+          className="align-items-center"
+          style={{ justifyContent: "center", padding: "10px 0 50px 0" }}
+        >
           {/* Left Column: Heading + AboutCard */}
-          <Col
-            md={7}
-            style={{
-              justifyContent: "center",
-              paddingTop: "30px",
-              paddingBottom: "50px",
-            }}
-          >
+          <Col md={7} className="mb-4">
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
               Know Who <strong className="purple">I'M</strong>
             </h1>
             <Aboutcard />
           </Col>
 
-          <Col
-            md={5}
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              transform: "translateY(-30px)", // This moves it up
-              paddingBottom: "30px",
-            }}
-            className="about-img"
-          >
+          {/* Right Column: Lottie Animation */}
+          <Col md={5} className="d-flex justify-content-center">
             <Lottie
               animationData={animationData}
               loop
-              style={{ maxHeight: "400px", width: "100%" }}
+              style={{ maxHeight: "380px", width: "100%", maxWidth: "380px" }}
             />
           </Col>
         </Row>
