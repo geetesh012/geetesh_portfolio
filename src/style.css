@@ -698,6 +698,19 @@ button:focus {
   border: 2px solid #2d81ff;
 }
 
+.resume-section .btn {
+  margin: 20px 0;
+}
+
+.resume-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.purple {
+  color: #6c63ff;
+}
+
 .like-item {
   padding-top: 10px !important;
   font-size: 1.1em !important;
