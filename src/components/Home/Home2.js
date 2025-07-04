@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/profileP.png";
+import myImg from "../../Assets/Profile.jpg";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
@@ -19,9 +19,11 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              Turning ideas into interactive experiences—one line of code at a time.
+              Turning ideas into interactive experiences—one line of code at a
+              time.
               <br />
-              <br />A frontend developer with a passion for clean design and seamless user interaction. Skilled in
+              <br />A frontend developer with a passion for clean design and
+              seamless user interaction. Skilled in
               <i>
                 <b className="purple"> React and Next.js </b>
               </i>
@@ -33,14 +35,27 @@ function Home2() {
               </i>
               <br />
               <br />
-              Focused on building clean, efficient, and engaging interfaces that bridge design and functionality seamlessly
+              Focused on building clean, efficient, and engaging interfaces that
+              bridge design and functionality seamlessly
               <br />
-              <br /> I enjoy turning ideas into interactive, pixel-perfect products that users love to explore.
+              <br /> I enjoy turning ideas into interactive, pixel-perfect
+              products that users love to explore.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="profileP" style={{ maxWidth: '300px', width: '100%', height: 'auto' }} />
+              <img
+                src={myImg}
+                className="img-fluid"
+                alt="profileP"
+                style={{
+                  maxWidth: "300px",
+                  width: "100%",
+                  height: "auto",
+                  borderRadius: "50%",
+                  objectFit: "cover",
+                }}
+              />
             </Tilt>
           </Col>
         </Row>
